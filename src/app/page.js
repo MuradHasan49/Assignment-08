@@ -118,25 +118,20 @@ export default function HomePage() {
                       <p className="text-slate-300 text-lg md:text-xl mb-8 leading-relaxed max-w-xl">
                         {slide.subtitle}
                       </p>
-                      <div className="flex flex-col xs:flex-row sm:flex-row items-start sm:items-center gap-4 w-full max-w-sm sm:max-w-none">
-                        <Button
-                          as={Link}
+                      <div className="flex flex-col xs:flex-row sm:flex-row items-start sm:items-center gap-4 w-full max-w-sm sm:max-w-none relative z-50">
+                        <Link
                           href="/all-tiles"
-                          size="lg"
-                          className="bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold px-8 rounded-xl shadow-2xl shadow-indigo-500/30 hover:scale-105 hover:shadow-indigo-500/50 transition-all duration-300 w-full sm:w-auto"
+                          className="flex items-center justify-center bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold px-8 rounded-xl shadow-2xl shadow-indigo-500/30 hover:scale-105 hover:shadow-indigo-500/50 transition-all duration-300 h-12 w-full sm:w-auto cursor-pointer"
                         >
                           Browse Now
                           <Icon icon="mdi:arrow-right" className="w-5 h-5 ml-1" />
-                        </Button>
-                        <Button
-                          as={Link}
+                        </Link>
+                        <Link
                           href="/all-tiles"
-                          size="lg"
-                          variant="bordered"
-                          className="border-white/20 text-white hover:bg-white/5 rounded-xl font-medium w-full sm:w-auto"
+                          className="flex items-center justify-center border border-white/20 text-white hover:bg-white/5 rounded-xl font-medium h-12 px-8 transition-all duration-200 w-full sm:w-auto cursor-pointer"
                         >
                           View Gallery
-                        </Button>
+                        </Link>
                       </div>
                     </div>
                   </div>
