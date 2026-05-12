@@ -1,3 +1,12 @@
+if (typeof window === "undefined") {
+  try {
+    const dns = require("dns");
+    dns.setServers(["8.8.8.8", "8.8.4.4"]);
+  } catch (err) {
+    console.warn("Failed to set DNS servers:", err);
+  }
+}
+
 import { betterAuth } from "better-auth";
 import { mongodbAdapter } from "better-auth/adapters/mongodb";
 import { MongoClient } from "mongodb";

@@ -1,3 +1,11 @@
+if (typeof window === "undefined") {
+  try {
+    const dns = require("dns");
+    dns.setServers(["8.8.8.8", "8.8.4.4"]);
+  } catch (err) {
+    console.warn("Failed to set DNS servers:", err);
+  }
+}
 import { MongoClient } from "mongodb";
 
 const uri = process.env.MONGODB_URI;

@@ -1,5 +1,4 @@
-import dns from "dns";
-dns.setServers(["8.8.8.8", "8.8.4.4"]);
+
 
 import { Inter, Playfair_Display } from "next/font/google";
 import { Toaster } from "react-hot-toast";
@@ -34,6 +33,12 @@ export default function RootLayout({ children }) {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+        {/* Correct, Fast Google Preconnections */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
         {children}

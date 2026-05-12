@@ -33,10 +33,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1,
-h2,
-h3,
-.font-serif {
+h1, h2, h3, .font-serif {
   font-family: var(--font-playfair), "Playfair Display", serif;
 }
 
@@ -65,11 +62,9 @@ h3,
 ::-webkit-scrollbar {
   width: 6px;
 }
-
 ::-webkit-scrollbar-track {
   background: #0a0a0f;
 }
-
 ::-webkit-scrollbar-thumb {
   background: #6366f1;
   border-radius: 3px;
@@ -79,7 +74,6 @@ h3,
 .swiper-pagination-bullet {
   background: #6366f1 !important;
 }
-
 .swiper-button-next,
 .swiper-button-prev {
   color: #6366f1 !important;
@@ -87,43 +81,21 @@ h3,
 
 /* Animation keyframes */
 @keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
-
 @keyframes shimmer {
-  0% {
-    background-position: -200px 0;
-  }
-
-  100% {
-    background-position: calc(200px + 100%) 0;
-  }
+  0% { background-position: -200px 0; }
+  100% { background-position: calc(200px + 100%) 0; }
 }
-
 @keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
 }
-
 .animate-fadeInUp {
   animation: fadeInUp 0.6s ease forwards;
 }
