@@ -1,3 +1,5 @@
+import dns from "dns";
+dns.setServers(["8.8.8.8", "8.8.4.4"]);
 
 import { Inter, Playfair_Display } from "next/font/google";
 import { Toaster } from "react-hot-toast";
