@@ -4,17 +4,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
-import {
-  Button,
-  Avatar,
-  AvatarImage,
-  AvatarFallback,
-  AvatarRoot,
-  Dropdown,
-  DropdownTrigger,
-  DropdownMenu,
-  DropdownItem,
-} from "@heroui/react";
 import { useSession, signOut } from "@/lib/auth-client";
 import toast from "react-hot-toast";
 import { Icon } from "@iconify/react";
@@ -124,23 +113,23 @@ export default function AppNavbar() {
                 {isUserDropdownOpen && (
                   <>
                     {/* Background click overlay to close */}
-                    <div 
-                      className="fixed inset-0 z-40" 
-                      onClick={() => setIsUserDropdownOpen(false)} 
+                    <div
+                      className="fixed inset-0 z-40"
+                      onClick={() => setIsUserDropdownOpen(false)}
                     />
-                    
+
                     {/* Menu Body */}
                     <div className="absolute right-0 mt-2 w-[220px] z-50 origin-top-right bg-[#111118]/95 backdrop-blur-xl border border-white/10 rounded-2xl p-2 shadow-2xl shadow-black overflow-hidden animate-fadeInUp" style={{ animationDuration: '0.2s' }}>
-                      <Link 
-                        href="/my-profile" 
+                      <Link
+                        href="/my-profile"
                         className="flex items-center gap-3 px-3 py-2.5 text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-all font-medium text-sm"
                         onClick={() => setIsUserDropdownOpen(false)}
                       >
                         <Icon icon="mdi:account-outline" className="w-5 h-5 text-indigo-400" />
                         My Profile
                       </Link>
-                      <Link 
-                        href="/my-profile/update" 
+                      <Link
+                        href="/my-profile/update"
                         className="flex items-center gap-3 px-3 py-2.5 text-slate-300 hover:text-white hover:bg-white/10 rounded-xl transition-all font-medium text-sm"
                         onClick={() => setIsUserDropdownOpen(false)}
                       >
@@ -148,7 +137,7 @@ export default function AppNavbar() {
                         Update Info
                       </Link>
                       <div className="border-t border-white/5 my-1" />
-                      <button 
+                      <button
                         onClick={() => { handleLogout(); setIsUserDropdownOpen(false); }}
                         className="flex items-center gap-3 w-full px-3 py-2.5 text-red-400 hover:bg-red-500/10 rounded-xl transition-all font-medium text-sm text-left"
                       >
