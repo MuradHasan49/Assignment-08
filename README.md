@@ -68,6 +68,33 @@ TileVerse is a beautifully designed tile gallery web application where users can
 
 ---
 
+## 📂 Folder Structure
+
+```plaintext
+ph-assignment-08/
+├── json-server/           # Mock persistent JSON API storage
+├── src/
+│   ├── app/               # Next.js App Router Directory
+│   │   ├── all-tiles/     # Catalog & filter layout page
+│   │   ├── api/           # API gateways (Auth/Verify session)
+│   │   ├── login/         # Sign in view controller
+│   │   ├── my-profile/    # User control panel & update portal
+│   │   ├── register/      # Onboarding / registration form
+│   │   ├── tile/          # [id] Dynamic product detail pages
+│   │   ├── layout.js      # Primary app shell & hydration layer
+│   │   ├── not-found.js   # Custom recovery logic for 404s
+│   │   └── page.js        # Homepage & landing system
+│   ├── components/        # Reusable dynamic React components
+│   ├── lib/               # Shared data layer clients (Auth/API)
+│   ├── globals.css        # Tailwind CSS utility foundation
+│   └── middleware.js      # Edge-runtime auth guard integration
+├── .env.local             # Environment credentials configuration
+├── next.config.mjs        # Core framework configurations
+└── package.json           # Primary manifests & dependencies
+```
+
+---
+
 ## ⚙️ Environment Variables
 
 Create a `.env.local` file:
