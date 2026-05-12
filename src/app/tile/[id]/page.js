@@ -63,7 +63,7 @@ export default function TileDetailPage() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] flex flex-col">
       <AppNavbar/>
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 w-full">
+      <main className="container mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 w-full">
         <nav className="flex items-center gap-2 text-sm text-slate-500 mb-8">
           <Link href="/" className="hover:text-indigo-400 transition-colors">Home</Link>
           <Icon icon="mdi:chevron-right" className="w-4 h-4"/>

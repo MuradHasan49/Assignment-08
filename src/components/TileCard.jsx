@@ -25,8 +25,8 @@ export default function TileCard({ tile, variant = "gallery" }) {
     <div className="group relative bg-[#111118] rounded-2xl overflow-hidden border border-white/5 hover:border-indigo-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-indigo-500/10 hover:-translate-y-1">
       <div className="relative h-52 overflow-hidden">
         <Image src={tile.image} alt={tile.title} fill className="object-cover transition-transform duration-500 group-hover:scale-110"
-          sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw"/>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#111118] via-transparent to-transparent opacity-60"/>
+          sizes="(max-width:768px) 100vw, (max-width:1200px) 50vw, 33vw" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#111118] via-transparent to-transparent opacity-60" />
         {!tile.inStock && (
           <div className="absolute top-3 left-3 bg-red-500/90 text-white text-xs font-medium px-2.5 py-1 rounded-lg backdrop-blur-sm">Out of Stock</div>
         )}
@@ -38,15 +38,15 @@ export default function TileCard({ tile, variant = "gallery" }) {
         <span className={`inline-block text-xs font-medium px-2.5 py-1 rounded-lg border mb-2 capitalize ${categoryClass}`}>{tile.category}</span>
         <h3 className="text-white font-semibold text-base mb-1 line-clamp-1 group-hover:text-indigo-300 transition-colors duration-200">{tile.title}</h3>
         <div className="flex items-center gap-1.5 text-slate-500 text-xs mb-4">
-          <Icon icon="mdi:ruler-square" className="w-3.5 h-3.5"/>
+          <Icon icon="mdi:ruler-square" className="w-3.5 h-3.5" />
           <span>{tile.dimensions}</span>
           <span className="mx-1">·</span>
-          <Icon icon="mdi:cube-outline" className="w-3.5 h-3.5"/>
+          <Icon icon="mdi:cube-outline" className="w-3.5 h-3.5" />
           <span>{tile.material}</span>
         </div>
         <Link href={`/tile/${tile.id}`}>
           <button className="w-full bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-sm font-semibold rounded-xl py-2 hover:shadow-lg hover:shadow-indigo-500/30 transition-all duration-200 hover:scale-[1.02]">
-            {variant === "featured" ? "View Details" : "Details"}
+            View Details
           </button>
         </Link>
       </div>

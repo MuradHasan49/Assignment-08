@@ -97,7 +97,7 @@ export default function HomePage() {
 
                 {/* Hero content */}
                 <div className="absolute inset-0 flex items-center">
-                  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                  <div className="container mx-auto px-4 sm:px-6 lg:px-8 w-full">
                     <div className="max-w-2xl animate-fadeInUp">
                       <span className="inline-flex items-center gap-2 text-indigo-400 text-sm font-medium mb-4 px-3 py-1.5 bg-indigo-500/10 border border-indigo-500/20 rounded-full">
                         <Icon icon="mdi:star-four-points" className="w-3.5 h-3.5" />
@@ -158,7 +158,7 @@ export default function HomePage() {
       </div>
 
       {/* =========== CATEGORY HIGHLIGHTS =========== */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
           {categoryHighlights.map((cat) => (
             <Link
@@ -174,7 +174,7 @@ export default function HomePage() {
       </section>
 
       {/* =========== FEATURED TILES =========== */}
-      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20">
         {/* Section header */}
         <div className="flex flex-row items-end justify-between w-full gap-4 mb-10 border-b border-white/5 pb-6">
           <div>
@@ -202,30 +202,27 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {loading
             ? Array(4)
-                .fill(0)
-                .map((_, i) => <TileCardSkeleton key={i} />)
+              .fill(0)
+              .map((_, i) => <TileCardSkeleton key={i} />)
             : featuredTiles.map((tile) => (
-                <TileCard key={tile.id} tile={tile} variant="featured" />
-              ))}
+              <TileCard key={tile.id} tile={tile} variant="featured" />
+            ))}
         </div>
 
         <div className="text-center mt-10">
-          <Button
-            as={Link}
+          <Link
             href="/all-tiles"
-            size="lg"
-            variant="bordered"
-            className="bg-gradient-to-r from-indigo-500/10 to-purple-600/10 border border-indigo-500/30 text-indigo-300 hover:text-white hover:from-indigo-500 hover:to-purple-600 rounded-xl font-semibold px-10 transition-all duration-300 shadow-xl hover:shadow-indigo-500/20"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-indigo-500/10 to-purple-600/10 border border-indigo-500/30 text-indigo-300 hover:text-white hover:from-indigo-500 hover:to-purple-600 rounded-xl font-semibold h-12 px-10 transition-all duration-300 shadow-xl hover:shadow-indigo-500/20 cursor-pointer"
           >
             Explore Full Gallery
             <Icon icon="mdi:arrow-right" className="w-5 h-5 ml-2" />
-          </Button>
+          </Link>
         </div>
       </section>
 
       {/* =========== WHY TILEVERSE SECTION =========== */}
       <section className="bg-[#06060c] border-y border-white/5 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2
               className="text-4xl font-bold text-white mb-3"

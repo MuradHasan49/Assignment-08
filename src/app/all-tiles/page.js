@@ -46,7 +46,7 @@ function AllTilesContent() {
   return (
     <div className="min-h-screen bg-[#0a0a0f] flex flex-col">
       <AppNavbar />
-      <div className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full">
+      <div className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 container mx-auto w-full">
         <div className="text-center mb-10">
           <p className="text-indigo-400 text-sm font-medium mb-2 flex items-center justify-center gap-2">
             <Icon icon="mdi:view-grid-outline" className="w-4 h-4"/>Full Collection
