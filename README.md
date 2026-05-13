@@ -30,7 +30,7 @@ TileVerse is a beautifully designed tile gallery web application where users can
 
 ## 🚀 Live URL
 
-🔗 [https://your-live-url.vercel.app](https://assignment-08-kappa-liart.vercel.app/)
+🔗 [https://assignment-08-kappa-liart.vercel.app/](https://assignment-08-kappa-liart.vercel.app/)
 
 ---
 
