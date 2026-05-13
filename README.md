@@ -184,11 +184,11 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 1. Push your `json-server/db.json` to a GitHub repository
 2. Create a **Render Web Service** pointing to that repo
-3. Set the start command: `npx json-server --watch db.json --port 5000`
+3. Set the start command: `npm run server`
 4. Copy the Render URL and set it as `NEXT_PUBLIC_JSON_SERVER_URL` in your Vercel environment variables
 
 ---
 
 ## 👨‍💻 Author
 
-Built with ❤️ for **PH Assignment 08** by [Murad Hasan](https://github.com/MuradHasan49)
+Built with ❤️ for **PH Assignment 08** by [Murad Hasan](https://muradhasan49.vercel.app/)
