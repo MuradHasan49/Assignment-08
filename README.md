@@ -2,7 +2,7 @@
 
 > A premium tile showcase gallery built with **Next.js 15**, **HeroUI**, **BetterAuth**, and **MongoDB**.
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000?style=for-the-badge&logo=vercel)](https://your-live-url.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-000?style=for-the-badge&logo=vercel)](https://assignment-08-kappa-liart.vercel.app/)
 
 ---
 
@@ -30,7 +30,7 @@ TileVerse is a beautifully designed tile gallery web application where users can
 
 ## 🚀 Live URL
 
-🔗 [https://your-live-url.vercel.app](https://your-live-url.vercel.app)
+🔗 [https://your-live-url.vercel.app](https://assignment-08-kappa-liart.vercel.app/)
 
 ---
 
