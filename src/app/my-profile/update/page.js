@@ -166,16 +166,16 @@ export default function UpdateProfilePage() {
                 </div>
 
                 {/* Option 2: URL Input */}
-                <div className="flex flex-col justify-center">
-                  <p className="text-slate-500 text-[11px] uppercase tracking-wider font-semibold text-center mb-3 md:mb-0">Or use an internet link</p>
-                  <div className="relative md:mt-2">
-                    <Icon icon="mdi:link-variant" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400"/>
+                <div className="flex flex-col justify-center w-full h-[110px] bg-[#0a0a0f] border border-dashed border-white/10 rounded-xl px-4 transition-all hover:border-indigo-500/50 group">
+                  <p className="text-slate-500 text-[10px] uppercase tracking-wider font-bold text-center mb-2.5 group-hover:text-indigo-400 transition-colors">Or use an internet link</p>
+                  <div className="relative w-full">
+                    <Icon icon="mdi:link-variant" className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400 group-hover:text-indigo-400 transition-colors" />
                     <input 
                       type="url" 
                       value={form.image.startsWith("data:") ? "" : form.image} 
                       onChange={handleImageUrlChange}
                       placeholder="Paste image address here" 
-                      className={`${inputClass} pl-10 !py-2.5`}
+                      className="w-full bg-white/5 border border-white/10 text-white rounded-xl pl-9 pr-4 py-2 text-xs placeholder:text-slate-500 focus:outline-none focus:border-indigo-500 transition-all duration-200"
                     />
                   </div>
                 </div>
